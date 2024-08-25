@@ -5,6 +5,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 400px) {
+    width: 90%;
+  }
+
   header {
     margin-bottom: 40px;
     min-width: 300px;

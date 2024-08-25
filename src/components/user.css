@@ -1,0 +1,25 @@
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 47%;
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  .data {
+    .name {
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    svg {
+      cursor: pointer;
+    }
+  }
+}

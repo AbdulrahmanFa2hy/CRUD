@@ -1,0 +1,35 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 35px;
+  .addUser-btn {
+    background-color: rgba(0, 0, 255, 0.749);
+    border-radius: 8px;
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    align-self: self-start;
+    text-decoration: none;
+    & {
+      @media screen and (max-width: 350px) {
+        align-self: normal;
+      }
+    }
+  }
+  .empty {
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  .users {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    min-width: 250px;
+  }
+}

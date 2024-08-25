@@ -1,0 +1,34 @@
+.add-form {
+  min-width: 300px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  label {
+    width: 100%;
+    font-weight: 500;
+    input {
+      margin-top: 10px;
+      border: none;
+      outline: none;
+      padding: 20px;
+      width: 100%;
+      background-color: #ddd;
+      border-radius: 4px;
+    }
+  }
+  button {
+    align-self: flex-start;
+    width: 35%;
+    min-width: 130px;
+    border: none;
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}

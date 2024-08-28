@@ -3,6 +3,7 @@ import { updateUser } from "../../store/userSlice";
 import "./update.css";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const Update = () => {
   const navigate = useNavigate();
@@ -21,8 +22,9 @@ const Update = () => {
     try {
       dispatch(updateUser({ name, email, id: +params.id }));
       navigate("/");
-    } catch (error) {
-      console.log(error.message);
+      toast.success("Updated successfully");
+    } catch {
+      toast.error("Oops! Error");
     }
   };
 

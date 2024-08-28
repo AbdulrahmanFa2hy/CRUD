@@ -4,6 +4,7 @@ import { RiDeleteBinLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 import { deleteUser } from "../store/userSlice";
 import { useDispatch } from "react-redux";
+import { toast } from "react-toastify";
 
 const User = ({ id, name, email }) => {
   const navigate = useNavigate();
@@ -17,6 +18,11 @@ const User = ({ id, name, email }) => {
     }
   };
   const handleRemove = () => {
+    try {
+      toast.error("Deleted");
+    } catch {
+      toast.error("Error!");
+    }
     dispatch(deleteUser({ id }));
   };
   return (

@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { addUser } from "../../store/userSlice";
 import "./addUser.css";
 import { useDispatch } from "react-redux";
+import { toast } from "react-toastify";
 
 const AddUser = () => {
   const navigate = useNavigate();
@@ -21,8 +22,9 @@ const AddUser = () => {
         })
       );
       navigate("/");
-    } catch (error) {
-      console.log(error.message);
+      toast.success("Added successfully");
+    } catch {
+      toast.error("Oops! Error");
     }
   };
   return (

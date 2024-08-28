@@ -3,10 +3,12 @@ import "./App.css";
 import Home from "./pages/home/Home";
 import Update from "./pages/update/Update";
 import AddUser from "./pages/addUser/AddUser";
+import ToastProvider from "./components/ToastProvider";
 
 function App() {
   return (
     <div className="container">
+      <ToastProvider />
       <header>
         <h1>CRUD With Redux Toolkit</h1>
       </header>
